@@ -7,7 +7,7 @@ import { Header } from "src/components/Header";
 import { Sidebar } from "src/components/Sidebar";
 import classes from "./App.module.css";
 
-export const App: FC = () => {
+const App: FC = () => {
   const cropperRef = useRef<ReactCropperElement>(null);
   const [imgUrl, setImgUrl] = useState(floorPlan);
   const [preview, setPreview] = useState("");
@@ -52,3 +52,5 @@ export const App: FC = () => {
     </>
   );
 };
+
+export default App;
